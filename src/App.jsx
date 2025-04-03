@@ -8,7 +8,6 @@ import CartComponent from "./pages/CartComponent";
 import RegisterComponent from "./pages/RegisterComponent";
 import LoginComponent from "./pages/LoginComponent";
 import ProtectedRoute from "./routes/ProtectedRoute";
-import LogoutComponent from "./components/LogoutComponent";
 
 const App = () =>{
   return(
@@ -16,7 +15,7 @@ const App = () =>{
     <HeaderComponent/>
     <Routes>
       <Route path="/" element={< HomeComponent/>}></Route>
-      <Route path={`/dashboard`} element={<ProtectedRoute><HomeComponent /> <LogoutComponent /></ProtectedRoute>}></Route>
+      <Route path={`/dashboard`} element={<ProtectedRoute><HomeComponent /> </ProtectedRoute>}></Route>
       <Route path={`/cart`} element={<ProtectedRoute><CartComponent /></ProtectedRoute>}></Route>
       <Route path={`/register`} element={<RegisterComponent />}></Route>
       <Route path={`/login`} element={<LoginComponent />}></Route>
