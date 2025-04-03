@@ -1,0 +1,83 @@
+*
+{
+    margin: 0;
+    top: 0;
+}
+
+::-webkit-scrollbar
+{
+    display: none;
+}
+
+/* Header Section */
+.icon
+{
+    color: rgb(226, 221, 221);
+}
+
+/* Nav CSS */
+.icon-link-hover:hover
+{
+    color: #c7d3ce !important;
+}
+
+.menu
+{
+    display: none;
+}
+
+.cart-items
+{
+    font-size: 12px;
+    padding: 1px 8px;
+    top: -9px;
+    right: -9px;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce
+{
+    0%, 100% {transform: translateY(0);}
+    50% {transform: translateY(-5px);}
+}
+
+/* Product CSS */
+.container-width
+{
+    width: 270px;
+    height: 480px;
+    transition: transform 0.6s ease;
+}
+
+.container-width:hover
+{
+    transform: scale(1.1);
+    z-index: 0;
+}
+
+.hover-light
+{
+    transition: transform 0.8s ease;
+}
+
+.hover-light:hover
+{
+    color: white !important;
+    transform: scale(1.1);
+}
+
+.log-out:hover
+{
+    background-color: rgb(23, 70, 72);
+    color: white;
+}
+
+.search
+{
+    border: none;
+}
+
+.search:hover
+{
+    outline-color: rgb(23, 70, 72);
+}
