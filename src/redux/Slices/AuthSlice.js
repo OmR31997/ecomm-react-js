@@ -8,7 +8,6 @@ export const AuthSlice = createSlice({
     reducers: {
         logIn: (state) => {
             state.isAuthenticated = true;
-            alert(`Hell: ${state.isAuthenticated}`)
         },
         logOut: (state) => {
             state.isAuthenticated = false;
